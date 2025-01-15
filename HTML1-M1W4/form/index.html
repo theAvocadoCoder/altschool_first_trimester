@@ -55,8 +55,18 @@
           />
         </p>
 
-        <!-- Gender and Date of Birth -->
+        <!-- Email and Gender -->
         <p>
+          <label for="email">Email Address:</label>
+          <input
+            type="text"
+            name="Email"
+            placeholder="Enter email address"
+            autocomplete="on"
+            required
+            id="email"
+          />
+
           <label for="gender">Gender</label>
           <select
             name="gender"
@@ -66,7 +76,10 @@
             <option value="male">Male</option>
             <option value="female">Female</option>
           </select>
+        </p>
 
+        <!-- Date of Birth and Phone Number -->
+        <p>
           <label for="Birth">Date of Birth:</label>
           <input
             type="text"
@@ -75,19 +88,6 @@
             autocomplete="on"
             required
             id="Birth"
-          />
-        </p>
-
-        <!-- Email and Phone Number -->
-        <p>
-          <label for="Email">Email Address:</label>
-          <input
-            type="text"
-            name="Email"
-            placeholder="Enter email address"
-            autocomplete="on"
-            required
-            id="email"
           />
         
           <label for="Phone">Phone Number:</label>
@@ -101,9 +101,9 @@
           />
         </p>
 
-        <!-- Country and Residence -->
+        <!-- Residence -->
         <p>
-          <label for="country">Country:</label>
+          <label for="country">Country of Residence</label>
           <select
             name="country"
             id="country"
@@ -136,7 +136,7 @@
             <option value="Zambia">Zambia</option>
           </select>
         
-          <label for="Residence">State/City of Residence:</label>
+          <label for="Residence">State of Residence:</label>
           <input
             type="text"
             name="Residence"
@@ -146,24 +146,6 @@
             id="Residence"
           />
         </p>
-
-        <!-- Channel -->
-        <p>
-          <label for="channel">How did you hear about Us?:</label>
-          <input type="text" name="channel" id="chnannel" list="channel" placeholder="Select channel"/>
-          <datalist id="channel-list">
-            <option value="LinkIn"></option>
-            <option value="Youtube"></option>
-            <option value="Friend"></option>
-            <option value="Twitter/X"></option>
-            <option value="Tiktok"></option>
-            <option value="WhatsApp"></option>
-            <option value="Bill board"></option>
-            <option value="Sales officer"></option>
-            <option value="Face book"></option>
-            <option value="Other"></option>
-          </datalist>
-        </p> 
 
         <!-- Password -->
         <p>
@@ -183,10 +165,33 @@
           />
         </p>
 
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
+        <!-- Channel -->
+        <p>
+          <label for="channel">How did you hear about Us?:</label>
+          <input type="text" name="channel" id="channel" list="channel" placeholder="Select channel"/>
+          <datalist id="channel-list">
+            <option value="LinkIn"></option>
+            <option value="Youtube"></option>
+            <option value="Friend"></option>
+            <option value="Twitter/X"></option>
+            <option value="Tiktok"></option>
+            <option value="WhatsApp"></option>
+            <option value="Bill board"></option>
+            <option value="Sales officer"></option>
+            <option value="Face book"></option>
+            <option value="Other"></option>
+          </datalist>
+        </p> 
+
+        <p>By clicking continue, I agree to <a href="#">Terms of Use</a> and acknowledge that I have read the <a href="#">Privacy Policy</a>.</p>
+
+        <button type="submit">Sign up</button>
       </fieldset>
     </form>
   </main>
+  <footer>
+    <hr>
+    <p align="center">theAvocadoCoder &copy; 2024 <br> Abuja, Nigeria</p>
+  </footer>
 </body>
 </html>
