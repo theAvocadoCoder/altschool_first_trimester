@@ -1,0 +1,34 @@
+
+table {
+  border-collapse: collapse;
+  background-color: gainsboro;
+
+  td {
+    padding: .5rem 1.5rem;
+
+    &:nth-child(even) {
+      background-color: #ffffff60;
+    }
+
+  }
+
+  tr {
+    &:nth-child(even) {
+      background-color: #ffffff60;
+
+    }
+  }
+}
+
+thead {
+
+  th {
+    background-color: #a9a9a9;
+    padding: .5rem 1.5rem;
+    text-align: left;
+
+    &:nth-child(even) {
+      background-color: #a9a9a960;
+    }
+  }
+}
