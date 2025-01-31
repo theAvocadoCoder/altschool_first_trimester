@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Calibri, sans-serif
+}
+
+body {
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+}
+
+div {
+  background-color: white;
+  width: min(80%, 20rem);
+  padding: 0 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: .5rem;
+}
+
+h1 {
+  position: relative;
+  top: -1rem;
+  background-color: deeppink;
+  padding: 1rem;
+  border-radius: .25rem;
+}
