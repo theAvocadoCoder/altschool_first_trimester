@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Powerful Message</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        img, video, iframe {
+            max-width: 100%;
+            height: auto;
+        }
+        figure {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>My Story</h1>
+        <p>A glimpse into who I am and what I stand for.</p>
+    </header>
+
+    <!-- Responsive Picture Element -->
+    <section>
+        <h2>A Visual Introduction</h2>
+        <picture>
+            <source srcset="assets/profile_default.jpg" media="(max-width: 600px)">
+            <source srcset="assets/profile_default.jpg" media="(max-width: 1024px)">
+            <source srcset="assets/profile_default.jpg" media="(min-width: 1025px)">
+            <img src="assets/profile_default.jpg" alt="A picture representing me">
+        </picture>
+        <p>This image adapts to different devices.</p>
+    </section>
+
+    <!-- Video Element -->
+    <section>
+        <h2>My Journey</h2>
+        <video controls>
+            <source src="video/journey.mp4" type="video/mp4">
+            <source src="video/journey.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+        <p>A brief video showcasing my achievements.</p>
+    </section>
+
+    <!-- Audio Element -->
+    <section>
+        <h2>My Favorite Quote</h2>
+        <audio controls>
+            <source src="audio/quote.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <p>An audio clip of a quote that inspires me.</p>
+    </section>
+
+    <!-- Figure with Image and Caption -->
+    <section>
+        <h2>Memorable Moment</h2>
+        <figure>
+            <img src="images/moment.jpg" alt="A memorable moment">
+            <figcaption>This moment defined a significant part of my life.</figcaption>
+        </figure>
+    </section>
+
+    <!-- Embed External Content -->
+    <section>
+        <h2>What Inspires Me</h2>
+        <iframe src="https://www.youtube.com/embed/example" title="YouTube Video" allowfullscreen></iframe>
+        <p>A video that resonates with my values.</p>
+    </section>
+
+    <!-- Object and Param -->
+    <section>
+        <h2>My Resume (PDF)</h2>
+        <object data="resume.pdf" type="application/pdf" width="80%" height="500">
+            <param name="autoplay" value="true">
+            Your browser does not support embedded PDFs. <a href="resume.pdf">Download my resume here.</a>
+        </object>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 theAvocadoCoder. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
